@@ -40,22 +40,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.php" class="nav-link">Dashboard</a>
+              <a href="index.php" class="nav-link">DASHBOARD</a>
             </li>
             <li class="nav-item">
-              <a href="kamar.php" class="nav-link">Kamar</a>
+              <a href="kamar.php" class="nav-link">KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="fasilitas.php" class="nav-link">Fasilitas Kamar</a>
+              <a href="fasilitas.php" class="nav-link">FASILITAS KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="galeri.php" class="nav-link">Galeri</a>
+              <a href="galeri.php" class="nav-link">GALERI</a>
             </li>
             <li class="nav-item">
-              <a href="users.php" class="nav-link">Users</a>
+              <a href="users.php" class="nav-link">USER</a>
             </li>
             <li class="nav-item">
-              <a href="logout.php" class="nav-link">Logout</a>
+              <a href="logout.php" class="nav-link" style="margin-left: 800px;">LOGOUT</a>
             </li>
           </ul>
         </div>
@@ -70,7 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="container">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Dashboard</h1>
+              <h1 class="m-0">DASHBOARD</h1>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -173,10 +173,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <footer class="main-footer">
       <!-- To the right -->
       <div class="float-right d-none d-sm-inline">
-        Anything you want
       </div>
       <!-- Default to the left -->
-      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      <center><strong>Copyright &copy; Merbabu Gunung Hotel</strong></center> 
     </footer>
   </div>
   <!-- ./wrapper -->

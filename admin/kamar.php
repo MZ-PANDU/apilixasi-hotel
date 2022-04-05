@@ -35,22 +35,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.php" class="nav-link">Dashboard</a>
+              <a href="index.php" class="nav-link">DASHBOARD</a>
             </li>
             <li class="nav-item">
-              <a href="kamar.php" class="nav-link">Kamar</a>
+              <a href="kamar.php" class="nav-link">KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="fasilitas.php" class="nav-link">Fasilitas Kamar</a>
+              <a href="fasilitas.php" class="nav-link">FASILITAS KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="galeri.php" class="nav-link">Galeri</a>
+              <a href="galeri.php" class="nav-link">GALERI</a>
             </li>
             <li class="nav-item">
-              <a href="users.php" class="nav-link">Users</a>
+              <a href="users.php" class="nav-link">USERS</a>
             </li>
             <li class="nav-item">
-              <a href="logout.php" class="nav-link">Logout</a>
+              <a href="logout.php" class="nav-link" style="margin-left: 500px;">LOGOUT</a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="container">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Kamar</h1>
+              <h1 class="m-0">KAMAR</h1>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -78,16 +78,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-md-12">
             <div class="card card-outline card-info">
               <div class="card-header">
-                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambah">Tambah</button>
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambah">TAMBAH</button>
               </div>
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
                       <th style="width: 10px"></th>
-                      <th>No Kamar</th>
-                      <th>Foto</th>
-                      <th>Aksi</th>
+                      <th>NO KAMAR</th>
+                      <th>FOTO</th>
+                      <th>AKSI</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -109,8 +109,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <img class="d-block" src="gambar/<?php echo $row['foto']; ?>" width="200">
                         </td>
                         <td>
-                          <a href="edit_kamar.php?id_kamar=<?php echo $row['id_kamar']; ?>" class="btn btn btn-warning">Edit</a>
-                          <a href="hapus_kamar.php?id_kamar=<?php echo $row['id_kamar']; ?>" class="btn btn btn-danger" onclick="return confirm('Anda yakin akan menghapus data ini...?')">Hapus</a>
+                          <a href="edit_kamar.php?id_kamar=<?php echo $row['id_kamar']; ?>" class="btn btn btn-warning">EDIT</a>
+                          <a href="hapus_kamar.php?id_kamar=<?php echo $row['id_kamar']; ?>" class="btn btn btn-danger" onclick="return confirm('Anda yakin akan menghapus data ini...?')">HAPUS</a>
                         </td>
                       </tr>
                       <?php $no++; } ?>
@@ -130,7 +130,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Deskripsi Kamar</h4>
+        <h4 class="modal-title">DESKRIPSI KAMAR</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
@@ -153,10 +153,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <footer class="main-footer">
         <!-- To the right -->
         <div class="float-right d-none d-sm-inline">
-          Anything you want
+      
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <center><strong>Copyright &copy; Merbabu Gunung Hotel</strong></center> 
       </footer>
     </div>
     <!-- ./wrapper -->
@@ -174,7 +174,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Tambah Data Kamar</h4>
+            <h4 class="modal-title">TAMBAH DATA KAMAR</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -182,17 +182,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="modal-body">
             <form method="post" action="tambah_kamar.php" enctype="multipart/form-data">
               <div class="form-group">
-                <label>No. Kamar</label>
+                <label>NO. KAMAR</label>
                 <input type="text" class="form-control" name="no_kamar" placeholder="Nomor Kamar">
               </div>
               <div class="form-group">
-                <label>Foto Kamar</label>
+                <label>FOTO KAMAR</label>
                 <input type="file" name="foto" class="form-control">
               </div>         
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Simpan</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+              <button type="submit" class="btn btn-primary">SIMPAN</button>
             </div>
           </form>
         </div>

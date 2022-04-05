@@ -22,10 +22,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
-        <a href="" class="navbar-brand">
-          <img src="../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">Aplikasi UKK Pemesanan Hotel</span>
-        </a>
+     
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,22 +32,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index.php" class="nav-link">Dashboard</a>
+              <a href="index.php" class="nav-link">DASHBOARD</a>
             </li>
             <li class="nav-item">
-              <a href="kamar.php" class="nav-link">Kamar</a>
+              <a href="kamar.php" class="nav-link">KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="fasilitas.php" class="nav-link">Fasilitas Kamar</a>
+              <a href="fasilitas.php" class="nav-link">FASILITAS KAMAR</a>
             </li>
             <li class="nav-item">
-              <a href="galeri.php" class="nav-link">Galeri</a>
+              <a href="galeri.php" class="nav-link">GALERI</a>
             </li>
             <li class="nav-item">
-              <a href="users.php" class="nav-link">Users</a>
+              <a href="users.php" class="nav-link">USERS</a>
             </li>
             <li class="nav-item">
-              <a href="logout.php" class="nav-link">Logout</a>
+              <a href="logout.php" class="nav-link">LOGOUT</a>
             </li>
           </ul>
         </div>
@@ -65,7 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="container">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Fasilitas Kamar</h1>
+              <h1 class="m-0">FASILITAS KAMAR</h1>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -78,17 +75,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-md-12">
             <div class="card card-outline card-info">
               <div class="card-header">
-                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambah">Tambah</button>
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambah">TAMBAH</button>
               </div>
               <div class="card-body">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>Nama</th>
-                      <th>Username</th>
-                      <th>Level</th>
-                      <th>Aksi</th>
+                      <th>NAMA</th>
+                      <th>USERNAME</th>
+                      <th>LEVEL</th>
+                      <th>AKSI</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -104,15 +101,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <td><?php echo $d['username']; ?></td>
                         <td>
                           <?php if ($d['level'] == 1) { ?>
-                            <span class="badge bg-success">Admin</span>
+                            <span class="badge bg-success">ADMIN</span>
                           <?php } else { ?>
-                            <span class="badge bg-primary">Resepsionis</span>
+                            <span class="badge bg-primary">RESEPSIONIS</span>
                           <?php } ?>
 
                         </td>
                         <td>
-                          <a href="edit_users.php?id=<?php echo $d['id']; ?>" class="btn btn btn-warning">Edit</a>
-                          <a href="hapus_users.php?id=<?php echo $d['id']; ?>" class="btn btn btn-danger">Hapus</a>
+                          <a href="edit_users.php?id=<?php echo $d['id']; ?>" class="btn btn btn-warning">EDIT</a>
+                          <a href="hapus_users.php?id=<?php echo $d['id']; ?>" class="btn btn btn-danger">HAPUS</a>
                         </td>
                       </tr>
                       <?php
@@ -139,10 +136,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <footer class="main-footer">
       <!-- To the right -->
       <div class="float-right d-none d-sm-inline">
-        Anything you want
+       
       </div>
       <!-- Default to the left -->
-      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      <center><strong>Copyright &copy; Merbabu Gunung Hotel</strong></center> 
     </footer>
   </div>
   <!-- ./wrapper -->
@@ -160,7 +157,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Tambah Data Users</h4>
+          <h4 class="modal-title">TAMBAH DATA USER</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -168,29 +165,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="modal-body">
           <form action="tambah_users.php" method="POST">
             <div class="form-group">
-              <label>Nama</label>
+              <label>NAMA</label>
               <input type="text" class="form-control" name="nama" placeholder="Nama Users">
             </div>
             <div class="form-group">
-              <label>Username</label>
+              <label>USERNAME</label>
               <input type="text" class="form-control" name="username" placeholder="Username Users">
             </div>
             <div class="form-group">
-              <label>Password</label>
+              <label>PASSWORD</label>
               <input type="password" class="form-control" name="password" placeholder="Password Users">
             </div>
             <div class="form-group">
-              <label>Level Users</label>
+              <label>LEVEL USERS</label>
               <select name="level" class="form-control" required>
-                <option value="">--- Pilih Level ---</option>
-                <option value="1">Admin</option>
-                <option value="2">Resepsionis</option>                
+                <option value="">--- PILIH LEVEL ---</option>
+                <option value="1">ADMIN</option>
+                <option value="2">RESEPSIONIS</option>                
               </select>
             </div>         
           </div>
           <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+            <button type="submit" class="btn btn-primary">SIMPAN</button>
           </div>
         </form>
       </div>
