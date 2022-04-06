@@ -128,8 +128,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <th>NAMA TAMU</th>
                       <th>TANGGAL CEK IN</th>
                       <th>TANGGAL CEK OUT</th>
-                      <th>NO KAMAR</th>
+                      <th>TIPE KAMAR</th>
                       <th>STATUS</th>
+                      <th>AKSI</th>
                       <th>AKSI</th>
                     </tr>
                   </thead>
@@ -158,7 +159,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <td><?php echo $d['nama_tamu']; ?></td>
 		<td><?php echo $d['cek_in']; ?></td>
         <td><?php echo $d['cek_out']; ?></td>
-        <td><?php echo $d['id_kamar']; ?></td>
+        <td><?php
+        if ( $d['id_kamar'] == 6 ) {
+          echo "Deluxe";
+        } else {
+          echo "Superior";
+        }
+        ?></td>
         <td><?php
                           if ($d['status'] == 1) { ?>
                             <span class="badge bg-warning">BELUM DI KONFIRMASI</span>
@@ -169,7 +176,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <input type="hidden" name="id_pesanan" value="<?php echo $d['id_pesanan']; ?>">
                             <input type="hidden" name="status" value="2">
                             <button class="btn btn-sm btn-primary">KONFIRMASI</button>
-                          </form></td>
+                          </form>
+                          
+                          </td>
+
+                          <td> <a href="aksi_hapus.php?id_pesanan=<?php echo $d['id_pesanan']; ?>" class="btn btn btn-danger" onclick="return confirm('Anda yakin akan menghapus data ini...?')">HAPUS</a></td>
 	</tr>
 	<?php } ?>
 

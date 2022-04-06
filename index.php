@@ -186,7 +186,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                     <div class="modal-footer justify-content-between">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="submit" class="btn btn-primary">Konfirmasi Pesanan</button>
+                      <button type="submit" onClick="alert('Pesanan anda berhasil!');" class="btn btn-primary">Konfirmasi Pesanan</button>
                     </div>
                   </div>
                   <!-- /.modal-content -->
